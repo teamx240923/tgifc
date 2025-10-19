@@ -4,7 +4,7 @@ export default function Loader() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-cream">
       <Image
-        src="/tgifc-logo.png"
+        src="/tgifc-logo.svg"
         alt="TGIFC Logo Loader"
         width={150}
         height={150}

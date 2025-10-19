@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm py-4 px-6 md:px-16 flex justify-between items-center">
       <div className="flex items-center">
         <Image
-          src="/tgifc-logo.png"
+          src="/tgifc-logo.svg"
           alt="TGIFC Logo"
           width={80}
           height={80}

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen pt-24 pb-16 px-6 md:px-16 bg-white overflow-hidden">
+    <section className="relative min-h-screen pt-32 md:pt-30 pb-16 px-6 md:px-16 bg-white overflow-hidden">
       {/* Confetti decoration */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
         {/* Scattered colored shapes for confetti effect */}
@@ -19,16 +19,6 @@ export default function HeroSection() {
       <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
         {/* Left Content */}
         <div className="space-y-6">
-          <div className="flex items-center">
-            <Image
-              src="/tgifc-logo.png"
-              alt="TGIFC Logo"
-              width={120}
-              height={120}
-              className="object-contain"
-            />
-          </div>
-
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
             <span className="text-[#D32F2F]">India's Biggest</span>
             <br />
