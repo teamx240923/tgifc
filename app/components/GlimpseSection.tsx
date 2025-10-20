@@ -11,33 +11,31 @@ const cards = [
   },
   {
     id: 2,
-    iconPath: "/icons/parents.svg",
+    iconPath: "/Join the Movement Parents.png",
     title: "PARENTS",
     subtitle: "Register Your Child",
-    bgColor: "bg-[#FFE082]"
+    alt: "Parents"
   },
   {
     id: 3,
-    iconPath: "/icons/schools.svg",
+    iconPath: "/Join the Movement Schools.png",
     title: "SCHOOLS",
     subtitle: "Partner with TGIFC",
-    bgColor: "bg-[#FFE082]"
+    alt: "Schools"
   },
   {
     id: 4,
-    iconPath: "/icons/brands.svg",
+    iconPath: "/Join the Movement Brands.png",
     title: "BRANDS",
     subtitle: "Sponsor a Zone",
-    bgColor: "bg-[#FFE082]",
-    titleColor: "text-[#D32F2F]"
+    alt: "Brands"
   },
   {
     id: 5,
-    iconPath: "/icons/volunteers.svg",
+    iconPath: "/Join the Movement Volunteers.png",
     title: "VOLUNTEERS",
     subtitle: "Join the Crew",
-    bgColor: "bg-[#FFE082]",
-    titleColor: "text-[#D32F2F]"
+    alt: "Volunteers"
   }
 ];
 
@@ -52,9 +50,9 @@ export default function GlimpseSection() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className={`rounded-2xl overflow-hidden ${
-              card.type === "image" ? "row-span-2" : card.bgColor || "bg-[#FFD23F]"
-            } hover:shadow-xl transition-all hover:scale-105`}
+            className={`rounded-2xl overflow-hidden shadow-lg ${
+              card.type === "image" ? "row-span-2" : "bg-[#FFE082]"
+            } hover:shadow-xl transition-all hover:scale-105 cursor-pointer`}
           >
             {card.type === "image" ? (
               <div className="relative h-full min-h-[400px]">
@@ -66,21 +64,20 @@ export default function GlimpseSection() {
                 />
               </div>
             ) : (
-              <div className="p-6 flex flex-col items-center justify-center space-y-4 h-full">
-                <div className="flex items-center justify-center">
+              <div className="relative flex flex-col items-center justify-center p-8 space-y-4">
+                <div className="relative w-32 h-32">
                   <Image
                     src={card.iconPath}
-                    alt={`${card.title} icon`}
-                    width={96}
-                    height={96}
-                    className="w-24 h-24"
+                    alt={card.alt}
+                    fill
+                    className="object-contain"
                   />
                 </div>
-                <div>
-                  <h3 className={`text-xl font-extrabold ${card.titleColor || "text-[#1C1C1C]"}`}>
+                <div className="text-center">
+                  <h3 className="text-2xl font-extrabold text-[#1C1C1C] mb-2">
                     {card.title}
                   </h3>
-                  <p className="text-base font-semibold text-[#1C1C1C] mt-2">
+                  <p className="text-base font-semibold text-[#1C1C1C]">
                     {card.subtitle}
                   </p>
                 </div>
