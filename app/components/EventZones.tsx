@@ -5,25 +5,25 @@ import Image from "next/image";
 const zones = [
   {
     id: 1,
-    iconPath: "/icons/grind-race.svg",
+    iconPath: "/Event Zones Grind Race.png",
     title: "The Grind Race",
-    description: "India's first \"Fitness as sport\" race for kids -- age-based obstacles & sliding challenges"
+    description: "India's first \"Fitness as sport\" race for kids - age-based obstacles & sliding challenges"
   },
   {
     id: 2,
-    iconPath: "/icons/hungama-zone.svg",
+    iconPath: "/Event Zones Hungama Zone.png",
     title: "Hungama Zone",
     description: "Music, mascots, dance-offs, live bands, and surprise acts."
   },
   {
     id: 3,
-    iconPath: "/icons/jugmug-mela.svg",
+    iconPath: "/Event Zones Jugmug Mela.png",
     title: "Jugmug Mela",
-    description: "Food, art, games, and shopping stalls -- fun for the whole family"
+    description: "Food, art, games, and shopping stalls - fun for the whole family"
   },
   {
     id: 4,
-    iconPath: "/icons/vichar-manch.svg",
+    iconPath: "/Event Zones Vichar Manch.png",
     title: "Vichar Manch",
     description: "Talks & workshops with fitness experts and educators."
   },
@@ -31,7 +31,7 @@ const zones = [
 
 export default function EventZones() {
   return (
-    <section id="zones" className="py-20 bg-[#FFF8E7] text-center">
+    <section id="zones" className="py-20 bg-white text-center">
       <h2 className="text-4xl md:text-5xl font-bold mb-16 text-[#1C1C1C]">
         Event Zones
       </h2>

@@ -1,29 +1,41 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm py-4 px-6 md:px-16 flex justify-between items-center">
-      <div className="flex items-center">
-        <Image
-          src="/tgifc-logo.svg"
-          alt="TGIFC Logo"
-          width={80}
-          height={80}
-          className="object-contain"
-        />
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm py-4 px-6 md:px-16 flex items-center justify-between">
+      {/* Left: Logo */}
+      <div className="flex-shrink-0">
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            src="/tgifc-logo.svg"
+            alt="TGIFC Logo"
+            width={80}
+            height={80}
+            className="object-contain cursor-pointer"
+          />
+        </Link>
       </div>
-      <div className="hidden md:flex gap-8 items-center text-base font-medium text-[#1C1C1C]">
+
+      {/* Center: Menu */}
+      <div className="hidden md:flex gap-8 items-center text-base font-medium text-[#1C1C1C] absolute left-1/2 transform -translate-x-1/2">
         <a href="#about" className="hover:text-[#81B622] transition-colors">About</a>
         <a href="#zones" className="hover:text-[#81B622] transition-colors">Event Zones</a>
-        <a href="#schedule" className="hover:text-[#81B622] transition-colors">Schedule</a>
-        <a href="#gallery" className="hover:text-[#81B622] transition-colors">Gallery</a>
+        <a href="/schedule" className="hover:text-[#81B622] transition-colors">Schedule</a>
+        {/* <a href="#glimpses" className="hover:text-[#81B622] transition-colors">Gallery</a> */}
         <a href="#sponsors" className="hover:text-[#81B622] transition-colors">Sponsors</a>
+      </div>
+
+      {/* Right: CTA Buttons */}
+      <div className="hidden md:flex gap-4 items-center">
         <button className="bg-[#81B622] hover:bg-[#6AA312] text-white px-6 py-2 rounded-lg font-semibold transition-colors">
           Register Now
         </button>
-        <a href="#volunteer" className="hover:text-[#81B622] transition-colors">Volunteer</a>
+        <a href="#volunteer" className="hover:text-[#81B622] font-medium transition-colors">
+          Volunteer
+        </a>
       </div>
     </nav>
   );

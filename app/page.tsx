@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 
 import { useState, useEffect } from "react";
+import JoinTheMovementSection from "./components/JoinTheMovementSection";
+import SponsorsSection from "./components/SponsorsSection";
 
 export default function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -27,8 +29,16 @@ export default function HomePage() {
       <HeroSection />
       <HighlightsSection />
       <EventZones />
-      <AboutOrganiser />
-      <GlimpseSection />
+      <div className="-mt-16">
+        <AboutOrganiser />
+      </div>
+      <div className="-mt-16">
+        <JoinTheMovementSection />
+      </div>
+      {/* <GlimpseSection /> */}
+      <div className="-mt-16">
+        <SponsorsSection />
+      </div>
       <Footer />
     </main>
   );
