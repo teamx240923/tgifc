@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "../utils/assetPath";
 
 export default function AboutOrganiser() {
   return (
@@ -21,7 +22,7 @@ export default function AboutOrganiser() {
             className="relative w-32 h-32 flex-shrink-0 mx-auto md:mx-0 transition-transform duration-300 hover:scale-105"
           >
             <Image
-              src="/fitbuds logo.png"
+              src={assetPath("/fitbuds logo.png")}
               alt="FitBuds Logo"
               fill
               className="object-contain"
@@ -60,7 +61,7 @@ export default function AboutOrganiser() {
                 className="relative w-48 h-16 md:w-56 md:h-20"
               >
                 <Image
-                  src="/iiml-logo.png"
+                  src={assetPath("/iiml-logo.png")}
                   alt="IIM Lucknow EIC Logo"
                   fill
                   className="object-contain transition-transform duration-300 hover:scale-105"
@@ -74,7 +75,7 @@ export default function AboutOrganiser() {
                 className="relative w-56 h-14 md:w-64 md:h-16"
               >
                 <Image
-                  src="/isb-logo.png"
+                  src={assetPath("/isb-logo.png")}
                   alt="I-Venture @ISB Hyderabad Logo"
                   fill
                   className="object-contain transition-transform duration-300 hover:scale-105"
@@ -88,7 +89,7 @@ export default function AboutOrganiser() {
                 className="relative w-24 h-28 md:w-28 md:h-32"
               >
                 <Image
-                  src="/fit-india-logo.png"
+                  src={assetPath("/fit-india-logo.png")}
                   alt="Fit India Movement Logo"
                   fill
                   className="object-contain transition-transform duration-300 hover:scale-105"

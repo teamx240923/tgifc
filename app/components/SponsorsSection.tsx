@@ -1,28 +1,29 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "../utils/assetPath";
 
 const sponsors = [
-  { name: "Aashiana Housing", logo: "/sponsors/aashiana-logo.jpg", url: "https://www.ashianahousing.com/" },
-  { name: "Ipsaa", logo: "/sponsors/ipsaa-logo.png", url: "https://www.ipsaa.in/" },
-  { name: "Anytime Fitness", logo: "/sponsors/anytime-fitness-logo.png", url: "https://www.anytimefitness.co.in/" },
-  { name: "Sixth Element", logo: "/sponsors/sixthelement-logo.png", url: "https://www.sixthelement.edu.in/" },
-  { name: "Tru Bike", logo: "/sponsors/trubike-logo.png", url: "https://tru.bike/" },
-  { name: "Barosi", logo: "/sponsors/barosi-logo.png", url: "https://www.barosi.in/" },
-  { name: "The Beacon School", logo: "/sponsors/beacon-logo.png", url: "https://thebeaconschool.in/" },
-  { name: "Boss Ladies", logo: "/sponsors/bossladies-logo.png", url: "https://bossladies.in/" },
-  { name: "Bring my Flowers", logo: "/sponsors/bringmyflowers-logo.png", url: "https://bringmyflowers.com/" },
-  { name: "Cyclocraze", logo: "/sponsors/cyclocraze-logo.png", url: "https://cyclocraze.com/" },
-  { name: "Feed Smart", logo: "/sponsors/feedsmart-logo.png", url: "https://www.feedsmart.in/" },
-  { name: "HealthKart", logo: "/sponsors/healthkart-logo.png", url: "https://www.healthkart.com/" },
-  { name: "Hippo Homes", logo: "/sponsors/hippohomes-logo.png", url: "https://www.hippohomes.com/" },
-  { name: "IJM Toyota", logo: "/sponsors/ijmtoyota-logo.png", url: "https://www.ijmtoyota.com/" },
-  { name: "Oh Nuts", logo: "/sponsors/ohnuts-logo.png", url: "https://ohnuts.com/" },
-  { name: "Pronto", logo: "/sponsors/pronto-logo.png", url: "https://www.withpronto.com/" },
-  { name: "Sanfort Global Preschool", logo: "/sponsors/sanfort-logo.png", url: "https://sanfortglobalpreschool.com/" },
-  { name: "StepWhere", logo: "/sponsors/stepwhere-logo.png", url: "https://www.stepwhere.in/" },
-  { name: "Twiddles", logo: "/sponsors/twiddles-logo.png", url: "https://twiddles.in/" },
-  { name: "Xrai Digital", logo: "/sponsors/xrai-logo.png", url: "https://xraidigital.com/" },
+  { name: "Aashiana Housing", logo: assetPath("/sponsors/aashiana-logo.jpg"), url: "https://www.ashianahousing.com/" },
+  { name: "Ipsaa", logo: assetPath("/sponsors/ipsaa-logo.png"), url: "https://www.ipsaa.in/" },
+  { name: "Anytime Fitness", logo: assetPath("/sponsors/anytime-fitness-logo.png"), url: "https://www.anytimefitness.co.in/" },
+  { name: "Sixth Element", logo: assetPath("/sponsors/sixthelement-logo.png"), url: "https://www.sixthelement.edu.in/" },
+  { name: "Tru Bike", logo: assetPath("/sponsors/trubike-logo.png"), url: "https://tru.bike/" },
+  { name: "Barosi", logo: assetPath("/sponsors/barosi-logo.png"), url: "https://www.barosi.in/" },
+  { name: "The Beacon School", logo: assetPath("/sponsors/beacon-logo.png"), url: "https://thebeaconschool.in/" },
+  { name: "Boss Ladies", logo: assetPath("/sponsors/bossladies-logo.png"), url: "https://bossladies.in/" },
+  { name: "Bring my Flowers", logo: assetPath("/sponsors/bringmyflowers-logo.png"), url: "https://bringmyflowers.com/" },
+  { name: "Cyclocraze", logo: assetPath("/sponsors/cyclocraze-logo.png"), url: "https://cyclocraze.com/" },
+  { name: "Feed Smart", logo: assetPath("/sponsors/feedsmart-logo.png"), url: "https://www.feedsmart.in/" },
+  { name: "HealthKart", logo: assetPath("/sponsors/healthkart-logo.png"), url: "https://www.healthkart.com/" },
+  { name: "Hippo Homes", logo: assetPath("/sponsors/hippohomes-logo.png"), url: "https://www.hippohomes.com/" },
+  { name: "IJM Toyota", logo: assetPath("/sponsors/ijmtoyota-logo.png"), url: "https://www.ijmtoyota.com/" },
+  { name: "Oh Nuts", logo: assetPath("/sponsors/ohnuts-logo.png"), url: "https://ohnuts.com/" },
+  { name: "Pronto", logo: assetPath("/sponsors/pronto-logo.png"), url: "https://www.withpronto.com/" },
+  { name: "Sanfort Global Preschool", logo: assetPath("/sponsors/sanfort-logo.png"), url: "https://sanfortglobalpreschool.com/" },
+  { name: "StepWhere", logo: assetPath("/sponsors/stepwhere-logo.png"), url: "https://www.stepwhere.in/" },
+  { name: "Twiddles", logo: assetPath("/sponsors/twiddles-logo.png"), url: "https://twiddles.in/" },
+  { name: "Xrai Digital", logo: assetPath("/sponsors/xrai-logo.png"), url: "https://xraidigital.com/" },
 ];
 
 export default function SponsorsSection() {

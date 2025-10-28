@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "../utils/assetPath";
 
 export default function HeroSection() {
   return (
@@ -63,7 +64,7 @@ export default function HeroSection() {
         <div className="relative">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl ">
             <Image
-              src="/kids_running_field.png"
+              src={assetPath("/kids_running_field.png")}
               alt="Kids running at TGIFC"
               width={600}
               height={400}

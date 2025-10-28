@@ -1,29 +1,30 @@
 "use client";
 
 import Image from "next/image";
+import { assetPath } from "../utils/assetPath";
 
 const zones = [
   {
     id: 1,
-    iconPath: "/Event Zones Grind Race.png",
+    iconPath: assetPath("/Event Zones Grind Race.png"),
     title: "The Grind Race",
     description: "India's first \"Fitness as sport\" race for kids - age-based obstacles & sliding challenges"
   },
   {
     id: 2,
-    iconPath: "/Event Zones Hungama Zone.png",
+    iconPath: assetPath("/Event Zones Hungama Zone.png"),
     title: "Hungama Zone",
     description: "Music, mascots, dance-offs, live bands, and surprise acts."
   },
   {
     id: 3,
-    iconPath: "/Event Zones Jugmug Mela.png",
+    iconPath: assetPath("/Event Zones Jugmug Mela.png"),
     title: "Jugmug Mela",
     description: "Food, art, games, and shopping stalls - fun for the whole family"
   },
   {
     id: 4,
-    iconPath: "/Event Zones Vichar Manch.png",
+    iconPath: assetPath("/Event Zones Vichar Manch.png"),
     title: "Vichar Manch",
     description: "Talks & workshops with fitness experts and educators."
   },

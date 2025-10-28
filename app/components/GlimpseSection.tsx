@@ -7,6 +7,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { assetPath } from "../utils/assetPath";
 
 const events = [
   {
@@ -14,21 +15,21 @@ const events = [
     title: "TSE–Tata Primanti",
     date: "23.03.2025",
     color: "bg-[#81B622]",
-    images: ["/tse-1.png", "/tse-2.png", "/tse-3.png", "/tse-4.png"],
+    images: [assetPath("/tse-1.png"), assetPath("/tse-2.png"), assetPath("/tse-3.png"), assetPath("/tse-4.png")],
   },
   {
     id: 2,
     title: "M3M Golf Estate",
     date: "13.04.2025",
     color: "bg-[#FFD23F]",
-    images: ["/golfestate-1.png", "/golfestate-2.png", "/golfestate-3.png", "/golfestate-4.png"],
+    images: [assetPath("/golfestate-1.png"), assetPath("/golfestate-2.png"), assetPath("/golfestate-3.png"), assetPath("/golfestate-4.png")],
   },
   {
     id: 3,
     title: "The Grand Arch",
     date: "30.04.2025",
     color: "bg-[#81B622]",
-    images: ["/grandarch-1.png", "/grandarch-2.png", "/grandarch-3.png"],
+    images: [assetPath("/grandarch-1.png"), assetPath("/grandarch-2.png"), assetPath("/grandarch-3.png")],
   },
 ];
 

@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "../utils/assetPath";
 
 const cards = [
   {
     id: 1,
-    iconPath: "/Join the Movement Parents.png",
+    iconPath: assetPath("/Join the Movement Parents.png"),
     title: "PARENTS",
     subtitle: "Register Your Child",
     alt: "Parents",
@@ -14,7 +15,7 @@ const cards = [
   },
   {
     id: 2,
-    iconPath: "/Join the Movement Schools.png",
+    iconPath: assetPath("/Join the Movement Schools.png"),
     title: "SCHOOLS",
     subtitle: "Partner with TGIFC",
     alt: "Schools",
@@ -22,7 +23,7 @@ const cards = [
   },
   {
     id: 3,
-    iconPath: "/Join the Movement Brands.png",
+    iconPath: assetPath("/Join the Movement Brands.png"),
     title: "BRANDS",
     subtitle: "Sponsor a Zone",
     alt: "Brands",
@@ -30,7 +31,7 @@ const cards = [
   },
   {
     id: 4,
-    iconPath: "/Join the Movement Volunteers.png",
+    iconPath: assetPath("/Join the Movement Volunteers.png"),
     title: "VOLUNTEERS",
     subtitle: "Join the Crew",
     alt: "Volunteers",

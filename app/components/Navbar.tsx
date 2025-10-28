@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "../utils/assetPath";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,7 @@ export default function Navbar() {
       <div className="flex-shrink-0">
         <Link href="/" aria-label="Go to homepage">
           <Image
-            src="/tgifc-logo.svg"
+            src={assetPath("/tgifc-logo.svg")}
             alt="TGIFC Logo"
             width={80}
             height={80}
