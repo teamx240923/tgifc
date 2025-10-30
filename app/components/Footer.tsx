@@ -9,9 +9,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         {/* Quick Links */}
         <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
-          <a href="#about" className="hover:text-[#FFD23F] transition-colors">About</a>
-          <a href="#contact" className="hover:text-[#FFD23F] transition-colors">Contact</a>
-          {/* <a href="#faqs" className="hover:text-[#FFD23F] transition-colors">FAQs</a> */}
+          <a href="/#about" className="hover:text-[#FFD23F] transition-colors">About</a>
+          <a href="/#contact" className="hover:text-[#FFD23F] transition-colors">Contact</a>
+          <a href="/#faq" className="hover:text-[#FFD23F] transition-colors">FAQs</a>
           {/* <a href="#privacy" className="hover:text-[#FFD23F] transition-colors">Privacy Policy</a> */}
         </div>
 

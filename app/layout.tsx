@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "The Great Indian Fitness Carnival 2026",
   description:
     "India's biggest fitness carnival for kids — fun races, games, food, and family entertainment celebrating fitness, togetherness, and joy.",
+  icons: {
+    icon: "/favicon.ico", // ✅ This line ensures favicon updates across all pages
+  },
 };
 
 export const viewport: Viewport = {

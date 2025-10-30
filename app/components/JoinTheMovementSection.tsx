@@ -11,7 +11,7 @@ const cards = [
     title: "PARENTS",
     subtitle: "Register Your Child",
     alt: "Parents",
-    link: "https://forms.gle/PARENTS_FORM_LINK", // Replace with actual form link
+    link: "https://forms.gle/rLKP3tjWanTpBN4j6", // Replace with actual form link
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const cards = [
     title: "SCHOOLS",
     subtitle: "Partner with TGIFC",
     alt: "Schools",
-    link: "https://forms.gle/SCHOOLS_FORM_LINK", // Replace with actual form link
+    link: "https://forms.gle/QLazfrxoimgxdMZNA", // Replace with actual form link
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const cards = [
     title: "BRANDS",
     subtitle: "Sponsor a Zone",
     alt: "Brands",
-    link: "https://forms.gle/BRANDS_FORM_LINK", // Replace with actual form link
+    link: "https://forms.gle/p3hytWgzm2Cg6Mzy6", // Replace with actual form link
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const cards = [
     title: "VOLUNTEERS",
     subtitle: "Join the Crew",
     alt: "Volunteers",
-    link: "https://forms.gle/VOLUNTEERS_FORM_LINK", // Replace with actual form link
+    link: "https://forms.gle/ErdvGsZDgkJjP8pAA", // Replace with actual form link
   },
 ];
 

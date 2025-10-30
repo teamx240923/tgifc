@@ -31,10 +31,22 @@ export default function Navbar() {
 
       {/* Right: CTA Buttons */}
       <div className="hidden md:flex gap-4 items-center">
-        <button className="bg-[#81B622] hover:bg-[#6AA312] text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+        <a
+          href="https://forms.gle/7hsjxp4wu1uKz3Ch9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#81B622] hover:bg-[#6AA312] text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+        > Register Now
+        </a>
+
+        {/* <button className="bg-[#81B622] hover:bg-[#6AA312] text-white px-6 py-2 rounded-lg font-semibold transition-colors">
           Register Now
-        </button>
-        <a href="/#volunteer" className="hover:text-[#81B622] font-medium transition-colors">
+        </button> */}
+        <a 
+          href="https://forms.gle/VQoaNzFa6vn26Mt87" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-[#81B622] font-medium transition-colors">
           Volunteer
         </a>
       </div>

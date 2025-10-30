@@ -1,6 +1,7 @@
 "use client";
 
 import HeroSection from "./components/HeroSection";
+import FAQSection from "./components/FAQSection";
 import HighlightsSection from "./components/HighlightsSection";
 import EventZones from "./components/EventZones";
 import AboutOrganiser from "./components/AboutOrganiser";
@@ -39,6 +40,10 @@ export default function HomePage() {
       <div className="-mt-16">
         <SponsorsSection />
       </div>
+      <div className="-mt-16">
+        <FAQSection />
+      </div>
+      
       <Footer />
     </main>
   );

@@ -51,12 +51,23 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="bg-[#81B622] hover:bg-[#6AA312] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105">
+            {/* <button className="bg-[#81B622] hover:bg-[#6AA312] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105">
               Register Now
-            </button>
-            <button className="bg-[#FFD23F] hover:bg-[#FFC933] text-[#1C1C1C] text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105">
-              Sponsor TGIFC
-            </button>
+            </button> */}
+            <a
+              href = "https://forms.gle/b2ygGepzqKt9EDi27"
+              target = "_blank"
+              rel="noopener noreferrer"
+              className="bg-[#81B622] hover:bg-[#6AA312] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105"
+            > Register Now
+            </a> 
+            <a
+              href = "https://forms.gle/KUXWK7RZ8NVnYapLA"
+              target = "_blank"
+              rel="noopener noreferrer"
+              className="bg-[#FFD23F] hover:bg-[#FFC933] text-[#1C1C1C] text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105"
+            >Sponsor TGIFC
+            </a>
           </div>
         </div>
 
