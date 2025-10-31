@@ -14,7 +14,9 @@ import { useState, useEffect } from "react";
 import JoinTheMovementSection from "./components/JoinTheMovementSection";
 import SponsorsSection from "./components/SponsorsSection";
 
+
 export default function HomePage() {
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

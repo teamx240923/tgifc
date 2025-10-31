@@ -2,8 +2,14 @@
 
 import Image from "next/image";
 import { assetPath } from "../utils/assetPath";
+import HeroCarousel from "./HeroCarousel";
+
 
 export default function HeroSection() {
+  const slides = [
+    { src: assetPath("/kids_running_field.png"), alt: "Kids running at TGIFC" },
+    { src: assetPath("/tgr-logo.png"), alt: "TGIFC logo", contain: true },
+  ];
   return (
     <section className="relative pt-32 md:pt-30 pb-16 px-6 md:px-16 bg-white overflow-hidden">
           <div className="absolute inset-0 pointer-events-none opacity-60">
@@ -71,7 +77,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right Image */}
+        {/* Right Image
         <div className="relative">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl ">
             <Image
@@ -82,7 +88,9 @@ export default function HeroSection() {
               className="object-cover w-full h-auto transition-transform duration-300 hover:scale-105"
             />
           </div>
-        </div>
+        </div> */}
+        {/* Right: Carousel */}
+        <HeroCarousel slides={slides} />
       </div>
     </section>
   );
