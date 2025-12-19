@@ -50,6 +50,22 @@ const faqs = [
     q: "Who is organizing TGIFC?",
     a: "TGIFC is organized by FitBuds, in collaboration with Fit India, to promote physical literacy, fitness, and family well-being across India.",
   },
+  {
+    q: "What will kids receive – participation certificate or goodies?",
+    a: "All Grind Race participants will receive medals. Children taking part in other activities will receive participation certificates, along with exciting goodies.",
+  },
+  {
+    q: "Whom can parents contact on the event day for help?",
+    a: "Parents can reach out to the Help Desk team at the venue for any assistance on the event day.",
+  },
+  {
+    q: "Can siblings participate together, or do they have to participate separately?",
+    a: "Yes, siblings are welcome to attend together. Activities are designed by age group, so each child can participate comfortably at their own level.",
+  },
+  {
+    q: "Can parents join their children and stay with them during activities?",
+    a: "Parents are encouraged to stay at the venue throughout the event. For younger children, parental presence during activities may be required.",
+  },
 ];
 
 export default function FAQSection() {

@@ -7,8 +7,11 @@ import HeroCarousel from "./HeroCarousel";
 
 export default function HeroSection() {
   const slides = [
-    { src: assetPath("/kids_running_field.png"), alt: "Kids running at TGIFC" },
-    { src: assetPath("/tgr-logo.png"), alt: "TGIFC logo", contain: true },
+    { src: assetPath("/kids_running_field.png"), alt: "Kids running at TGIFC", type: "image" as const },
+    { src: assetPath("/tgr-logo.png"), alt: "TGIFC logo", contain: true, type: "image" as const },
+    {src: assetPath("/Tabur_tickets.png"), alt: "Kids running at TGIFC", type: "image" as const },
+    { src: assetPath("/TGIFC-teaser-video.mp4"), alt: "TGIFC teaser", contain: true, type: "video" as const, poster: assetPath("/kids_running_field.png") },
+    {src: assetPath("/TGIFC_teaser.mp4"), alt: "TGIFC teaser", contain: true, type: "video" as const, poster: assetPath("/kids_running_field.png") },
   ];
   return (
     <section className="relative pt-32 md:pt-30 pb-16 px-6 md:px-16 bg-white overflow-hidden">
@@ -56,24 +59,77 @@ export default function HeroSection() {
             A full day of fun races, games, food, music & family entertainment - all celebrating fitness, togetherness, and joy.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            {/* <button className="bg-[#81B622] hover:bg-[#6AA312] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105">
-              Register Now
-            </button> */}
-            <a
-              href = "https://forms.gle/b2ygGepzqKt9EDi27"
-              target = "_blank"
-              rel="noopener noreferrer"
-              className="bg-[#81B622] hover:bg-[#6AA312] text-white text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105"
-            > Register Now
-            </a> 
-            <a
-              href = "https://forms.gle/KUXWK7RZ8NVnYapLA"
-              target = "_blank"
-              rel="noopener noreferrer"
-              className="bg-[#FFD23F] hover:bg-[#FFC933] text-[#1C1C1C] text-lg font-semibold px-8 py-4 rounded-lg shadow-md transition-all hover:scale-105"
-            >Sponsor TGIFC
-            </a>
+          {/* Event Dates & Timings */}
+          <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl">
+            {/* Gurgaon */}
+            <div className="rounded-xl border-2 border-[#81B622] bg-white p-4 text-left shadow-sm">
+              <div className="flex items-center gap-2 text-[#1C1C1C] font-semibold">
+                <svg className="w-5 h-5 text-[#81B622]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 2a1 1 0 0 0-1 1v1H5a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1H8V3a1 1 0 0 0-1-1zM22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9z"/>
+                </svg>
+                Gurgaon — 01 Feb 2026
+              </div>
+              <div className="mt-2 flex items-start gap-2 text-[#1C1C1C]">
+                <svg className="w-5 h-5 text-[#81B622] mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+                </svg>
+                <p className="leading-snug">
+                  Tau Devilal Stadium (near Medanta Hospital), Gurugram
+                </p>
+              </div>
+              <div className="mt-2 flex items-center gap-2 text-[#1C1C1C]">
+                <svg className="w-5 h-5 text-[#81B622]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1Zm1 12h-4V7h2v4h2Z"/>
+                </svg>
+                9:00 AM – 7:00 PM
+              </div>
+
+              {/* Book link */}
+              <a
+                href="https://www.taabur.com/in/the-great-indian-fitness-carnival-gurugram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-[#81B622] px-5 py-2.5 font-semibold text-white transition-colors hover:bg-[#6AA312]"
+                aria-label="Book tickets for Gurgaon"
+              >
+                Book Tickets — Gurgaon
+              </a>
+            </div>
+
+            {/* Delhi */}
+            <div className="rounded-xl border-2 border-[#FFD23F] bg-white p-4 text-left shadow-sm">
+              <div className="flex items-center gap-2 text-[#1C1C1C] font-semibold">
+                <svg className="w-5 h-5 text-[#FFD23F]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 2a1 1 0 0 0-1 1v1H5a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1H8V3a1 1 0 0 0-1-1zM22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9z"/>
+                </svg>
+                New Delhi — 08 Feb 2026
+              </div>
+              <div className="mt-2 flex items-start gap-2 text-[#1C1C1C]">
+                <svg className="w-5 h-5 text-[#FFD23F] mt-0.5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+                </svg>
+                <p className="leading-snug">
+                  Jawaharlal Nehru (JLN) Stadium, New Delhi
+                </p>
+              </div>
+              <div className="mt-2 flex items-center gap-2 text-[#1C1C1C]">
+                <svg className="w-5 h-5 text-[#FFD23F]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1Zm1 12h-4V7h2v4h2Z"/>
+                </svg>
+                9:00 AM – 7:00 PM
+              </div>
+
+              {/* Book link */}
+              <a
+                href="https://www.taabur.com/in/the-great-indian-fitness-carnival-delhi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-[#FFD23F] px-5 py-2.5 font-semibold text-[#1C1C1C] transition-colors hover:bg-[#FFC933]"
+                aria-label="Book tickets for Delhi"
+              >
+                Book Tickets — Delhi
+              </a>
+            </div>
           </div>
         </div>
 
