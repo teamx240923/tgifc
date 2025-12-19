@@ -60,7 +60,9 @@ export default function HeroCarousel({ slides, intervalMs = 3000 }: Props) {
       if (i === index) {
         // try to play (must be muted for autoplay on mobile)
         vid.currentTime = 0;
-        const _ = vid.play().catch(() => {/* ignore autoplay rejections */});
+        void vid.play().catch(() => { /* ignore autoplay rejections */ });
+
+        // const _ = vid.play().catch(() => {/* ignore autoplay rejections */});
       } else {
         vid.pause();
       }
@@ -97,7 +99,9 @@ export default function HeroCarousel({ slides, intervalMs = 3000 }: Props) {
                 />
               ) : (
                 <video
-                  ref={(el) => (videoRefs.current[i] = el)}
+                  // ref={(el) => (videoRefs.current[i] = el)}
+                  ref={(el) => { videoRefs.current[i] = el; }}  // block body ⇒ returns void
+
                   // For autoplay to work everywhere: muted + playsInline
                   muted
                   playsInline
