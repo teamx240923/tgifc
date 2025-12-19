@@ -111,7 +111,7 @@ export default function HeroSection() {
                 className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-[#81B622] px-5 py-2.5 font-semibold text-white transition-colors hover:bg-[#6AA312]"
                 aria-label="Book tickets for Gurgaon"
               >
-                Book Tickets — Gurgaon
+                Book Tickets
               </a>
             </div>
 
@@ -147,7 +147,7 @@ export default function HeroSection() {
                 className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-[#FFD23F] px-5 py-2.5 font-semibold text-[#1C1C1C] transition-colors hover:bg-[#FFC933]"
                 aria-label="Book tickets for Delhi"
               >
-                Book Tickets — Delhi
+                Book Tickets
               </a>
             </div>
           </div>
