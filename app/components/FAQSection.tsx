@@ -4,7 +4,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is The Great Indian Fitness Carnival (TGIFC)?",
-    a: "TGIFC is India’s biggest kids’ fitness carnival — a full-day celebration of sports, wellness, and fun, bringing together families, schools, and communities to make fitness an exciting part of everyday life.",
+    a: "TGIFC is India’s biggest kids’ fitness carnival — a two day celebration of sports, wellness, and fun, bringing together families, schools, and communities to make fitness an exciting part of everyday life.",
   },
   {
     q: "Who can participate in TGIFC?",
@@ -16,11 +16,11 @@ const faqs = [
   },
   {
     q: "When and where will TGIFC 2026 take place?",
-    a: "TGIFC will be held on 1st February in Gurgaon and 8th February in Delhi at premium sports venues, welcoming over 10,000 participants in each city.",
+    a: "TGIFC will be held on 31st January and 1st February in Gurgaon at premium sports venues, welcoming over 10,000 participants in each city.",
   },
   {
     q: "How can I register my child?",
-    a: "Registrations open online soon! You’ll be able to register through our website or partner platforms.",
+    a: "Registrations are open! You’ll be able to register through our website or partner platforms.",
   },
   {
     q: "Do parents need separate tickets?",
