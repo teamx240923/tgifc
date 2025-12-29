@@ -73,7 +73,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-[#1C1C1C] max-w-xl leading-relaxed">
-            A full day of fun races, games, food, music & family entertainment — all celebrating
+            Two days of fun races, games, food, music & family entertainment — all celebrating
             fitness, togetherness, and joy.
           </p>
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
                 <svg className="w-5 h-5 text-[#81B622]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M7 2a1 1 0 0 0-1 1v1H5a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1H8V3a1 1 0 0 0-1-1zM22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9z"/>
                 </svg>
-                Gurgaon — 01 Feb 2026
+                Gurgaon — 31 Jan & 01 Feb 2026
               </div>
 
               <div className="mt-2 flex items-start gap-2 text-[#1C1C1C]">
@@ -116,7 +116,7 @@ export default function HeroSection() {
             </div>
 
             {/* Delhi */}
-            <div className="rounded-xl border-2 border-[#FFD23F] bg-white p-4 text-left shadow-sm h-full flex flex-col">
+            {/* <div className="rounded-xl border-2 border-[#FFD23F] bg-white p-4 text-left shadow-sm h-full flex flex-col">
               <div className="flex items-center gap-2 text-[#1C1C1C] font-semibold">
                 <svg className="w-5 h-5 text-[#FFD23F]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M7 2a1 1 0 0 0-1 1v1H5a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1H8V3a1 1 0 0 0-1-1zM22 10H2v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9z"/>
@@ -149,7 +149,7 @@ export default function HeroSection() {
               >
                 Book Tickets
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
