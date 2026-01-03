@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm py-3 px-6 md:px-16 flex items-center justify-between">
-      {/* Left: Logo */}
+      {/* Left: Logo
       <div className="flex-shrink-0">
         <Link href="/" aria-label="Go to homepage">
           <Image
@@ -42,6 +42,36 @@ export default function Navbar() {
             width={70}
             height={70}
             className="object-contain cursor-pointer"
+          />
+        </Link>
+      </div> */}
+
+      {/* Left: Logos */}
+      <div className="flex items-center gap-3 flex-shrink-0">
+        {/* New logo (on the left) */}
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            src={assetPath("/sponsors/aashiana-logo.jpg")} // <-- update path/filename
+            alt="Partner Logo"
+            width={90}
+            height={90}
+            className="object-contain cursor-pointer"
+            priority
+          />
+        </Link>
+
+        {/* Divider (optional) */}
+        {/* <span className="hidden md:block w-px h-6 bg-gray-200" /> */}
+
+        {/* Existing TGIFC logo */}
+        <Link href="/" aria-label="Go to homepage">
+          <Image
+            src={assetPath("/tgifc-logo.svg")}
+            alt="TGIFC Logo"
+            width={70}
+            height={70}
+            className="object-contain cursor-pointer"
+            priority
           />
         </Link>
       </div>

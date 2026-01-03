@@ -11,8 +11,8 @@ export default function HeroSection() {
   useEffect(() => setShowConfetti(true), []);
 
   const slides = [
-    { src: assetPath("/kids_running_field.png"), alt: "Kids running at TGIFC", type: "image" as const },
-    { src: assetPath("/tgr-logo.png"), alt: "TGIFC logo", contain: true, type: "image" as const },
+   // { src: assetPath("/kids_running_field.png"), alt: "Kids running at TGIFC", type: "image" as const },
+    //{ src: assetPath("/tgr-logo.png"), alt: "TGIFC logo", contain: true, type: "image" as const },
     { src: assetPath("/Tabur_tickets.png"), alt: "Tickets preview", type: "image" as const },
     {
       src: assetPath("/TGIFC-teaser-video.mp4"),

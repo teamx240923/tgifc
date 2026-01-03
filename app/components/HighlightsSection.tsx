@@ -11,7 +11,7 @@ const highlights = [
     //   </svg>
     // ),
     image: assetPath("/Highlights-Visitors.png"),
-    stat: "6,000+",
+    stat: "8,000+",
     label: "Visitors"
   },
   {
