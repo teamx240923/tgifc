@@ -12,7 +12,7 @@ const highlights = [
     // ),
     image: assetPath("/Highlights-Visitors.png"),
     stat: "8,000+",
-    label: "Visitors"
+    label: "Kids"
   },
   {
     id: 2,

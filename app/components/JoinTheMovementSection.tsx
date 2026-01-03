@@ -11,7 +11,7 @@ const cards = [
     title: "PARENTS",
     subtitle: "Register Your Child",
     alt: "Parents",
-    link: "https://forms.gle/rLKP3tjWanTpBN4j6", // Replace with actual form link
+    link: "https://www.taabur.com/in/the-great-indian-fitness-carnival-gurugram", // Replace with actual form link
   },
   {
     id: 2,
