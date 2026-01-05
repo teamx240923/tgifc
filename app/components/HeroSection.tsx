@@ -101,7 +101,7 @@ export default function HeroSection() {
                 <svg className="w-5 h-5 text-[#81B622]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1Zm1 12h-4V7h2v4h2Z"/>
                 </svg>
-                9:00 AM – 7:00 PM
+                10:00 AM – 6:00 PM
               </div>
 
               <a
