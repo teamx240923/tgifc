@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Do parents need separate tickets?",
-    a: "For The Grind Race, one parent or guardian can accompany each participant for free. For TGIFC entry, additional people can book tickets separately.",
+    a: "2 parents or guardians can accompany each participant for free holding either The Grind Race ticket or TGIFC ticket . For any additional entry, people can book tickets separately.",
   },
   {
     q: "What kind of activities will be there apart from races?",

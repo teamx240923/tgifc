@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
+import WhatsAppFloating from "./components/WhatsAppFloating";
 
 export const metadata: Metadata = {
   title: "The Great Indian Fitness Carnival 2026",
@@ -25,6 +26,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-cream text-dark font-sans antialiased overflow-x-hidden">
         {children}
+        {/* Floating WhatsApp Help (visible across the site) */}
+        <WhatsAppFloating
+          phone="919773700541" 
+          message="Hi! Can I get more info on this."
+        />
       </body>
     </html>
   );
